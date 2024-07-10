@@ -5,6 +5,7 @@ import store from './redux/store';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import Menu from './components/Menu';
+import "./styles/reset.scss"
 
 const App = () => {
   return (

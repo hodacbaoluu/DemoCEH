@@ -1,18 +1,16 @@
 // src/components/Menu.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Menu } from 'antd';
+import {  Menu } from 'antd';
+import '../styles/Menu.scss'; 
 
 const AppMenu = () => (
-  <Menu mode="horizontal">
-    <Menu.Item key="">
-      <Link to="/"></Link>
+  <Menu className='flex-container'>
+    <Menu.Item key="dashboard">
+      <Link to="/dashboard"><img src="https://cehsoft.com/wp-content/themes/cehsoft/images/logo-1.png" className='logo' alt="" /></Link>
     </Menu.Item>
     <Menu.Item key="login">
-      <Link to="/login">Login</Link>
-    </Menu.Item>
-    <Menu.Item key="dashboard">
-      <Link to="/dashboard">Dashboard</Link>
+      <Link className='text-right' to="/login">Login</Link>
     </Menu.Item>
   </Menu>
 );
